@@ -13,8 +13,8 @@ OR
 2. Make sure that you have Python installed.
     * If you don't, download it from [Python.org](https://www.python.org/)
 4. In your terminal, navigate to the project's root directory and set up a virtual environment with:
-    `. venv/bin/activate`
-3. Mess around with the solutions.
+<br>`. venv/bin/activate`
+6. Mess around with the solutions.
 
 #### Testing
 * To check the solutions against the automated tests, navigate to the project's root directory and enter into your terminal:  
