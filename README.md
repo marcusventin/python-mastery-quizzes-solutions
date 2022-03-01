@@ -13,11 +13,11 @@ OR
 2. Make sure that you have Python installed.
     * If you don't, download it from [Python.org](https://www.python.org/)
 3. In your terminal, navigate to the project's root directory and set up a virtual environment with:
-    `python3 -m venv venv`
+    <br>`python3 -m venv venv`
 4. Create the virtual environment with:
-    `. venv/bin/activate`
+    <br>`. venv/bin/activate`
 5. Install the project's dependencies with:
-    `pip install -r requirements.txt`
+    <br>`pip install -r requirements.txt`
 5. Mess around with the solutions.
 
 #### Testing
