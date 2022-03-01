@@ -12,9 +12,11 @@ OR
 1. Fork this repo and clone it to your local machine.
 2. Make sure that you have Python installed.
     * If you don't, download it from [Python.org](https://www.python.org/)
+3. Create the virtual environment with:
+    `python3 -m venv venv`
 4. In your terminal, navigate to the project's root directory and set up a virtual environment with:
-<br>`. venv/bin/activate`
-6. Mess around with the solutions.
+    `. venv/bin/activate`
+5. Mess around with the solutions.
 
 #### Testing
 * To check the solutions against the automated tests, navigate to the project's root directory and enter into your terminal:  
