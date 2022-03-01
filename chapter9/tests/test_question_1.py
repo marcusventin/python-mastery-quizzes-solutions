@@ -124,9 +124,9 @@ class TestQuestion1():
         program.run_game()
         stdout = capture_stdout(capsys)
 
-        assert stdout[-7] == expected_stdout[-7]
-        assert stdout[-4] == expected_stdout[-4]
-        assert stdout[-1] == expected_stdout[-1]
+        assert expected_stdout[-7] in "".join(stdout)
+        assert expected_stdout[-4] in "".join(stdout)
+        assert expected_stdout[-1] in "".join(stdout)
     
     @patch.object(random, 'randint', side_effect=[6, 7, 12])
     @patch(f'{path}.input', side_effect=['hit', 'hit', 'hit', 'stick'])
@@ -149,10 +149,10 @@ class TestQuestion1():
         program.run_game()
         stdout = capture_stdout(capsys)
 
-        assert stdout[-10] == expected_stdout[-10]
-        assert stdout[-7] == expected_stdout[-7]
-        assert stdout[-4] == expected_stdout[-4]
-        assert stdout[-1] == expected_stdout[-1]
+        assert expected_stdout[-10] in "".join(stdout)
+        assert expected_stdout[-7] in "".join(stdout)
+        assert expected_stdout[-4] in "".join(stdout)
+        assert expected_stdout[-1] in "".join(stdout)
 
 
 def capture_stdout(capsys):

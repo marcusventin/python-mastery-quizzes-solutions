@@ -16,9 +16,11 @@ class TestQuestion3():
         stdout = run_question_3(user_input)
 
         # We aren't testing for the wording of the input request message, so we
-        # slice around this to test for river formatting and game over messages.
-        assert stdout[0:4] == expected_stdout[0:4]
+        # slice around this to test that river formatting and game over messages
+        # are in the stdout string.
+        assert "".join(expected_stdout[0:4]) in "".join(stdout)
         assert stdout[-1] == expected_stdout[-1]
+
     
     def test_player_inputs_right_neither(self):
         user_input = '\n'.join(
@@ -41,8 +43,8 @@ class TestQuestion3():
 
         stdout = run_question_3(user_input)
         
-        assert stdout[0:4] == expected_stdout[0:4]
-        assert stdout[5:9] == expected_stdout[5:9]
+        assert "".join(expected_stdout[0:4]) in "".join(stdout)
+        assert "".join(expected_stdout[5:9]) in "".join(stdout)
         assert stdout[-1] == expected_stdout[-1]
   
     def test_player_inputs_right_left_neither(self):
@@ -71,9 +73,9 @@ class TestQuestion3():
 
         stdout = run_question_3(user_input)
 
-        assert stdout[0:4] == expected_stdout[0:4]
-        assert stdout[5:9] == expected_stdout[5:9]
-        assert stdout[10:14] == expected_stdout[10:14]
+        assert "".join(expected_stdout[0:4]) in "".join(stdout)
+        assert "".join(expected_stdout[5:9]) in "".join(stdout)
+        assert "".join(expected_stdout[10:14]) in "".join(stdout)
         assert stdout[-1] == expected_stdout[-1]
 
     def test_player_moves_left_right_neither_neither(self):
@@ -106,10 +108,10 @@ class TestQuestion3():
 
         stdout = run_question_3(user_input)
 
-        assert stdout[0:4] == expected_stdout[0:4]
-        assert stdout[5:9] == expected_stdout[5:9]
-        assert stdout[10:14] == expected_stdout[10:14]
-        assert stdout[15:19] == expected_stdout[15:19]
+        assert "".join(expected_stdout[0:4]) in "".join(stdout)
+        assert "".join(expected_stdout[5:9]) in "".join(stdout)
+        assert "".join(expected_stdout[10:14]) in "".join(stdout)
+        assert "".join(expected_stdout[15:19]) in "".join(stdout)
         assert stdout[-1] == expected_stdout[-1]
 
 

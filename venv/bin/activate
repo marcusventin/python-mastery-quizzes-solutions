@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/marcusventin/Projects/week-8-python/mastery-quizzes/venv"
+VIRTUAL_ENV="/Users/marcusventin/Projects/week-8-python/mastery-quizzes-solutions/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

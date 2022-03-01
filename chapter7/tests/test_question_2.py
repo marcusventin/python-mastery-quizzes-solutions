@@ -17,7 +17,7 @@ class TestQuestion2():
         expected_stdout = 'Mary, Lauren, Awad, Govind, Isla'
 
         stdout = run_question_2(user_input)
-        
+
         assert stdout[-2] == expected_stdout
 
     def test_user_puts_0_people_into_1_group_and_stdouts_empty_group(self):

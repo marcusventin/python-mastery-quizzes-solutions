@@ -60,7 +60,7 @@ def random_card():
     return cards[random.randint(0, 12)]
 
 def move():
-    print('Hit or stick? ')
+    print('Hit or stick? \n')
     user_move = input()
     while user_move != 'hit' and user_move != 'stick':
         user_move = input()
